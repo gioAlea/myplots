@@ -1,0 +1,197 @@
+
+  +++++++++++++++++++++++++++++++++++++++++++
+  +    MAD-X 5.02.00  (64 bit, Linux)       +
+  +           Production Version            +
+  + Code Modification Date: 2014.03.05      +
+  + Execution Time Stamp: 28.03.14 17.00.29 +
+  +++++++++++++++++++++++++++++++++++++++++++
+//*************************************
+
+//IP8 AT COLLISION WITH NOMINAL VALUES
+
+//*************************************
+
+
+
+option, warn,info; 
+
+
+
+//-----------------------------------------
+
+//Shortcut creation for needed directories
+
+//-----------------------------------------
+
+system,"ln -fns /afs/cern.ch/eng/lhc/optics/V6.503 db5"; !Nominal
+
+system,"ln -fns /afs/cern.ch/eng/lhc/optics/HLLHCV1.0 hl"; !High Luminosity
+
+system,"ln -fns /afs/cern.ch/user/a/ansantam/public/toolkit tkit"; !Beam parameters
+
+
+
+//-----------------------------------
+
+//Verbose off
+
+//-----------------------------------
+
+option, -echo,-warn,-info; 
+
+momgev =               7000 ;
+energev =        7000.000063 ;
+pmass =        0.938272046 ;
+lorgamma =        7460.522876 ;
+lorbeta =        0.999999991 ;
+clight =          299792458 ;
+sige =          0.0001129 ;
+sigz =             0.0755 ;
+sigt =    2.518408941e-10 ;
+emitnorm =           3.75e-06 ;
+epsx =    5.026457389e-10 ;
+epsy =    5.026457389e-10 ;
+et =    8.523950153e-06 ;
+emit_l =    8.523950153e-06 ;
+emit_l4p =        2.501082989 ;
+enter Twiss module
+  
+iteration:   1 error:   1.071061E-03 deltap:   0.000000E+00
+orbit:   2.778436E-06 -3.847472E-04  6.467301E-08 -1.819852E-06  0.000000E+00  0.000000E+00
+  
+iteration:   2 error:   3.129882E-06 deltap:   0.000000E+00
+orbit:  -1.035507E-10 -3.849879E-04  3.166438E-13 -1.809737E-06  0.000000E+00  0.000000E+00
+  
+iteration:   3 error:   1.588092E-10 deltap:   0.000000E+00
+orbit:   4.349975E-13 -3.849879E-04  4.367016E-19 -1.809736E-06  0.000000E+00  0.000000E+00
+
+++++++ table: summ
+
+            length             orbit5               alfa            gammatr 
+        26658.8832                 -0    0.0003212295592        55.79461037 
+
+                q1                dq1            betxmax              dxmax 
+       64.31000051       -51.99192335        4036.122402        2.660455773 
+
+             dxrms             xcomax             xcorms                 q2 
+        1.14868262      0.01219201592     0.001071198321        59.31999993 
+
+               dq2            betymax              dymax              dyrms 
+      -52.05613278        4036.121981    9.501115243e-06    6.035086849e-07 
+
+            ycomax             ycorms             deltap            synch_1 
+   9.501115157e-06    6.035086795e-07                  0                  0 
+
+           synch_2            synch_3            synch_4            synch_5 
+                 0                  0                  0                  0 
+enter Twiss module
+  
+iteration:   1 error:   1.071061E-03 deltap:   0.000000E+00
+orbit:   2.778436E-06 -3.847472E-04  6.467301E-08 -1.819852E-06  0.000000E+00  0.000000E+00
+  
+iteration:   2 error:   3.129882E-06 deltap:   0.000000E+00
+orbit:  -1.035507E-10 -3.849879E-04  3.166438E-13 -1.809737E-06  0.000000E+00  0.000000E+00
+  
+iteration:   3 error:   1.588092E-10 deltap:   0.000000E+00
+orbit:   4.349975E-13 -3.849879E-04  4.367016E-19 -1.809736E-06  0.000000E+00  0.000000E+00
+
+++++++ table: summ
+
+            length             orbit5               alfa            gammatr 
+        26658.8832                 -0    0.0003212295592        55.79461037 
+
+                q1                dq1            betxmax              dxmax 
+       64.31000051       -51.99192335        4036.122402        2.660455773 
+
+             dxrms             xcomax             xcorms                 q2 
+        1.14868262      0.01219201592     0.001071198321        59.31999993 
+
+               dq2            betymax              dymax              dyrms 
+      -52.05613278        4036.121981    9.501115243e-06    6.035086849e-07 
+
+            ycomax             ycorms             deltap            synch_1 
+   9.501115157e-06    6.035086795e-07                  0                  0 
+
+           synch_2            synch_3            synch_4            synch_5 
+                 0                  0                  0                  0 
+table(__14__) =     4.34997452e-13 ;
+table(__15__) =    4.367015989e-19 ;
+table(__16__) =   -0.0003849878693 ;
+table(__17__) =    -1.80973622e-06 ;
+table(__18__) =        3.000002214 ;
+table(__19__) =        3.000000863 ;
+table(__20__) =                  0 ;
+enter Twiss module
+  
+iteration:   1 error:   1.095125E-03 deltap:   0.000000E+00
+orbit:   1.482204E-05  3.843263E-04  5.461385E-08  1.822895E-06  0.000000E+00  0.000000E+00
+  
+iteration:   2 error:   2.212557E-05 deltap:   0.000000E+00
+orbit:   1.297852E-09  3.849878E-04 -7.611662E-13  1.809739E-06  0.000000E+00  0.000000E+00
+  
+iteration:   3 error:   1.960750E-09 deltap:   0.000000E+00
+orbit:   5.805879E-13  3.849879E-04 -4.331729E-19  1.809736E-06  0.000000E+00  0.000000E+00
+
+++++++ table: summ
+
+            length             orbit5               alfa            gammatr 
+        26658.8832                 -0    0.0003210216536        55.81267478 
+
+                q1                dq1            betxmax              dxmax 
+       64.30999992       -50.95914708        4036.120579        2.974792418 
+
+             dxrms             xcomax             xcorms                 q2 
+       1.158650332      0.01219201592     0.001089374075        59.32000002 
+
+               dq2            betymax              dymax              dyrms 
+      -51.60383861        4036.118907    9.501115243e-06     6.03691105e-07 
+
+            ycomax             ycorms             deltap            synch_1 
+   9.501115157e-06    6.036910996e-07                  0                  0 
+
+           synch_2            synch_3            synch_4            synch_5 
+                 0                  0                  0                  0 
+enter Twiss module
+  
+iteration:   1 error:   1.095125E-03 deltap:   0.000000E+00
+orbit:   1.482204E-05  3.843263E-04  5.461385E-08  1.822895E-06  0.000000E+00  0.000000E+00
+  
+iteration:   2 error:   2.212557E-05 deltap:   0.000000E+00
+orbit:   1.297852E-09  3.849878E-04 -7.611662E-13  1.809739E-06  0.000000E+00  0.000000E+00
+  
+iteration:   3 error:   1.960750E-09 deltap:   0.000000E+00
+orbit:   5.805879E-13  3.849879E-04 -4.331729E-19  1.809736E-06  0.000000E+00  0.000000E+00
+
+++++++ table: summ
+
+            length             orbit5               alfa            gammatr 
+        26658.8832                 -0    0.0003210216536        55.81267478 
+
+                q1                dq1            betxmax              dxmax 
+       64.30999992       -50.95914708        4036.120579        2.974792418 
+
+             dxrms             xcomax             xcorms                 q2 
+       1.158650332      0.01219201592     0.001089374075        59.32000002 
+
+               dq2            betymax              dymax              dyrms 
+      -51.60383861        4036.118907    9.501115243e-06     6.03691105e-07 
+
+            ycomax             ycorms             deltap            synch_1 
+   9.501115157e-06    6.036910996e-07                  0                  0 
+
+           synch_2            synch_3            synch_4            synch_5 
+                 0                  0                  0                  0 
+table(__21__) =    5.805878575e-13 ;
+table(__22__) =   -4.331728557e-19 ;
+table(__23__) =    0.0003849878694 ;
+table(__24__) =     1.80973622e-06 ;
+table(__25__) =        3.000001161 ;
+table(__26__) =        2.999999736 ;
+table(__27__) =                  0 ;
+
+  Number of warnings: 1
+1 in C and 0 in Fortran
+
+  ++++++++++++++++++++++++++++++++++++++++++++
+  + MAD-X 5.02.00 (64 bit) finished normally +
+  ++++++++++++++++++++++++++++++++++++++++++++
