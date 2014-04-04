@@ -119,34 +119,34 @@ for d in data:
   
   
   
-data=np.loadtxt(r'../../elements/out/aperture_b1_mqm.csv',delimiter=',',dtype=str)
+# data=np.loadtxt(r'../../elements/out/aperture_b1_mqm.csv',delimiter=',',dtype=str)
 
-n,s0,l0=[],[],[]
-for d in data:
-  a=str(d[0])
-  s0=float(d[1])
-  l0=float(d[2])
-  bar(s0- 23315.37898-l0,300, width=l0,bottom=-150,color=MQXA,edgecolor='black',linewidth='1.7',alpha=0.3)
+# n,s0,l0=[],[],[]
+# for d in data:
+#   a=str(d[0])
+#   s0=float(d[1])
+#   l0=float(d[2])
+#   bar(s0- 23315.37898-l0,300, width=l0,bottom=-150,color=MQXA,edgecolor='black',linewidth='1.7',alpha=0.3)
   # annotate(a.strip('"'),xy=(s0- 23315.37898-l0,150), xytext=(s0- 23315.37898-(l0/2),151),name='Verdana',family='sans-serif',weight='heavy', va='bottom', ha='center',rotation=90,size=15)
   
-data=np.loadtxt(r'../../elements/out/aperture_b1_mbxwh.csv',delimiter=',',dtype=str)
+# data=np.loadtxt(r'../../elements/out/aperture_b1_mbxwh.csv',delimiter=',',dtype=str)
 
-n,s0,l0=[],[],[]
-for d in data:
-  a=str(d[0])
-  s0=float(d[1])
-  l0=float(d[2])
-  b6=bar(s0- 23315.37898-l0,300, width=l0,bottom=-150,color=MBX,edgecolor='black',linewidth='1.7',alpha=0.3)
+# n,s0,l0=[],[],[]
+# for d in data:
+#   a=str(d[0])
+#   s0=float(d[1])
+#   l0=float(d[2])
+#   b6=bar(s0- 23315.37898-l0,300, width=l0,bottom=-150,color=MBX,edgecolor='black',linewidth='1.7',alpha=0.3)
   # annotate(a.strip('"'),xy=(s0- 23315.37898-l0,150), xytext=(s0- 23315.37898-(l0/2),151),name='Verdana',family='sans-serif',weight='heavy', va='bottom', ha='center',rotation=90,size=15)
 
 
-data=np.loadtxt(r'../../elements/out/aperture_b1_t.csv',delimiter=',',dtype=str)  
+# data=np.loadtxt(r'../../elements/out/aperture_b1_t.csv',delimiter=',',dtype=str)  
 
-n,s0,l0=[],[],[]
-for d in data:
-  a=str(d[0])
-  s0=float(d[1])
-  l0=float(d[2])
+# n,s0,l0=[],[],[]
+# for d in data:
+#   a=str(d[0])
+#   s0=float(d[1])
+#   l0=float(d[2])
   # bar(s0- 23315.37898-l0,300, width=l0,bottom=-150,color='black',edgecolor='black',linewidth='1.3',alpha=0.3)
   # annotate(a.strip('"'),xy=(s0- 23315.37898-l0,150), xytext=(s0- 23315.37898-(l0/2),151),name='Verdana',family='sans-serif',weight='heavy', va='bottom', ha='center',rotation=90,size=15)
 
