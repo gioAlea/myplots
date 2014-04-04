@@ -6,9 +6,9 @@ This folder englobes MAD-X code, it's output and the python scripts that treats 
 MAD-X
 -----
 
-The MAD-X code generating the data for collision is found in __"lhcb/Collision/madx"__, and for injection in __"lhcb/Injection/madx"__ .
+The MAD-X code generating the data for collision is found in __"lhcb/Collision/madx/coll_IP8.madx"__, and for injection in __"lhcb/Injection/madx/inj_IP8.madx"__ .
 
-The code is commented explaining each block.
+The code is commented explaining each block. The MAD-X folder also contains the MAD-X output. Probably should change the code at some point to send these to a "temp" folder.
 
 Python Plots
 ------------
