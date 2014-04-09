@@ -5,7 +5,7 @@ import sys
 sys.path.append("/afs/cern.ch/eng/sl/lintrack/Python_Classes4MAD/")
 try:
 	from metaclass import *
-except:
+except ImportError:
 	from metaclass25 import *
 
 
