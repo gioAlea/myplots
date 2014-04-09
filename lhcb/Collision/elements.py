@@ -127,7 +127,7 @@ elem.plotv(r'../../elements/out/aperture_b1_v.csv',V,t[3],e[0])
 # APERTURES
 # *********
 
-aperture.plotap(r'madx/aperture_b1.tfs')
+#aperture.plotap(r'madx/aperture_b1.tfs')
 
 
 #********************	
