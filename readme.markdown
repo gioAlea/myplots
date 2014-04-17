@@ -1,15 +1,15 @@
 "myplots" folder readme
 ========================
 
-This folder contains all the code to plot the LHC optics in 2D. For more detailed simulations (3D plots or tracking of many particles) see [FLUKA](http://www.fluka.org/fluka.php) or [SIXTRACK](http://sixtrack.web.cern.ch/SixTrack/) simulations respectively.
+This folder contains all the code to plot elements, apertures and beams of the interaction regions of HL-LHC in 2D. For more detailed simulations (3D plots or tracking of many particles) see [FLUKA](http://www.fluka.org/fluka.php) or [SIXTRACK](http://sixtrack.web.cern.ch/SixTrack/) respectively.
 
 "elements"
 ----------
-The __"elements"__ folder is a module that transforms MAD-X output to input for a python plotting script to plot the LHC elements we choose. See the _readme_ in that folder for more information.
+The __"elements"__ folder is a module that transforms MAD-X output to input for a python plotting script to plot the LHC elements we choose. See the _readme_ in that folder to see how it works.
 
 "aperture"
 ----------
-The __"aperture"__ folder is a module that will transform MAD-X output to input for a python plotting script to plot the LHC inner apertures. Coming soon.
+The __"aperture"__ folder is a module that will transform MAD-X output to input for a python plotting script to plot the LHC inner apertures. Coming soon!.
 
 "beams.py"
 ----------
@@ -33,7 +33,7 @@ beams.beam2x(r'madx/survey_lhcb2.tfs',r'madx/coll_b2_ip1.tfs')
 
 show()
 ```
-To see a full example check __"coll_IP#.py"__.
+To see a full example check __"coll_IP#.py"__ in the __Experiments folders__ section.
 
 "param.py"
 ----------
@@ -79,7 +79,7 @@ param.angle(r'madx/param_b1_ip1.tfs',t[2])
 
 show()
 ```
-To see a full example check __"coll_params_IP#.py"__.
+To see a full example check __"coll_params_IP#.py"__ in the __Experiments folders__ section.
 
 Experiments folders
 -------------------
@@ -92,11 +92,15 @@ The experiments folders (__"atlas"__, __"cms"__, __"lhcb"__ ) contain the follow
 		
     * __"coll_params_IP#.py"__: plots the beam trajectory and a 5 sigma envelope in the x and y planes, as well as the beta functions and the effective angle using __"param.py"__.
 
-    * __"madx"__ folder: you can run MAD-X with the relevant optics files and generate the data (aperture, twiss and survey data). To run MAD-X be sure to be connected to AFS or have it downloaded locally, and type:
+    * __"madx"__ folder: you can run MAD-X with the relevant optics files and generate the data (aperture, twiss and survey data). 
+     
+        To run MAD-X be sure to be connected to AFS or have it downloaded locally, and type:
     
         ```
         madx < coll_IP#.madx
         ```
 
         If you are not connected to AFS you won't be able to read the input files for MAD-X, but you can find the generated output in this repository.
+
+        The __.madx__ files are properly commented.
 	
