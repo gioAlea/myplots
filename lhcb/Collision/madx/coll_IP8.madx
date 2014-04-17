@@ -181,6 +181,58 @@ acbcvs5.l8b2 =  -1.234182126e-005 *on_sep8 + 0.00003437360000000000 *on_x8v;
 acbyvs5.r8b2 =   8.048753886e-007 *on_sep8 - 0.00003941520000000000 *on_x8v;
 
 
+//---------------------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------------------
+
+//*******
+//BEAM 1
+//*******
+
+//-----------------------------------
+//Use the sequence you want (beam 1)
+//-----------------------------------
+use,sequence=lhcb1;
+
+//-------------------------------------
+//Define the type and amount of output
+//-------------------------------------
+select,flag=twiss,clear;
+select,flag=twiss,
+column=name,s,l,betx,bety,sigx,ex,sigy,ey,dx,dpx,dy,dpy,x,y,aper_1,aper_2,aper_3,aper_4,alfx,alfy,px,py,sigxd,sigyd,wx,wy,T,PT,DELTAP,beta;
+
+//---------------------------------------------------------------------------------------------------
+//Execute the Twiss command to calculate the Twiss parameters and save the data in columns in .tfs
+//---------------------------------------------------------------------------------------------------
+twiss,table=twiss,file="param_b1_ip8.tfs";
+
+
+
+
+//*******
+//BEAM 2  
+//*******
+
+//-----------------------------------
+//Use the sequence you want (beam 2)
+//-----------------------------------
+use,sequence=lhcb2;
+
+//-------------------------------------
+//Define the type and amount of output
+//-------------------------------------
+select,flag=twiss,clear;
+select,flag=twiss,
+column=name,s,l,betx,bety,sigx,ex,sigy,ey,dx,dpx,dy,dpy,x,y,aper_1,aper_2,aper_3,aper_4,alfx,alfy,px,py,sigxd,sigyd,wx,wy,T,PT,DELTAP,beta;
+
+//---------------------------------------------------------------------------------------------------
+//Execute the Twiss command to calculate the Twiss parameters and display the data in columns in .tfs
+//---------------------------------------------------------------------------------------------------
+twiss,table=twiss,file="param_b2_ip8.tfs";
+
+
+
+//---------------------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------------------
 
 
 
